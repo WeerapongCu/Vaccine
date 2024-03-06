@@ -55,11 +55,8 @@ class Person {
             return 64;
         }else if(get_year() > 2499 && get_year() < 2562){
             return 2564 - get_year();
-        }      
-        else if (get_year() >= 2562 && get_year() < 2564 ){
+        }else if (get_year() >= 2562 && get_year() < 2564 ){
             return 2564 - get_year();
-        }else if (get_year() == 2564){
-            return get_numberMonth();
         }else{
             return 0;
         }
@@ -79,7 +76,7 @@ class Person {
 
 class Vaccine {
     public static void main(String[] args) {
-        Person person = new Person("Male", "1 กันยายน 2564");
+        Person person = new Person("Male", "3 มิถุนายน 2561");
         System.out.println(person.get_age());
     }   
 }
