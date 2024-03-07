@@ -76,7 +76,7 @@ class Person {
 
 class Vaccine {
     public static void main(String[] args) {
-        Person person = new Person("Male", "3 มิถุนายน 2561");
+        Person person = new Person("Male", "3 มิถุนายน 2564");
         System.out.println(person.get_age());
     }   
 }
