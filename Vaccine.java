@@ -1,3 +1,4 @@
+import java.util.*;
 import java.util.Scanner;
 public class Vaccine {
     public static void main(String[] args) {
@@ -19,9 +20,7 @@ public class Vaccine {
         // วันจันทร์ที่ 10 สิงหาคม พ.ศ.2499
         String gender = sc.nextLine();
         String Date_of_Birth = sc.nextLine();
-        int c = (int)Date_of_Birth.charAt(3);
         Person person = new Person(gender, Date_of_Birth);
-        System.out.println(c);
-        System.out.println(person.get_numberMonth());
+        System.out.println(person.get_month() + " <- print month");
     }   
 }

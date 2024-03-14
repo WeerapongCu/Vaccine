@@ -1,5 +1,3 @@
-
-
 public class Person {
 
     private String gender;
@@ -10,10 +8,6 @@ public class Person {
     public Person(String gender, String date_of_birth) {
         this.gender = gender;
         this.splitStr = date_of_birth.split(" ");
-
-        for (int i = 0; i < splitStr.length; i++) {
-            System.out.println(splitStr[i]);
-        }
     }
 
     public int get_year() {
@@ -29,20 +23,32 @@ public class Person {
     }
 
     public int get_numberMonth() {
-        switch (get_month()) {
-            case "มกราคม": return 1;
-            case "กุมภาพันธ์": return 2;
-            case "มีนาคม": return 3;
-            case "เมษายน": return 4;
-            case "พฤษภาคม": return 5;
-            case "มิถุนายน": return 6;
-            case "กรกฎาคม": return 7;
-            case "สิงหาคม": return 8;
-            case "กันยายน": return 9;
-            case "ตุลาคม": return 10;
-            case "พฤศจิกายน": return 11;
-            case "ธันวาคม": return 12;
-            default: return 0;
+        if (get_month() == "มกราคม") {
+            return 1;
+        } else if (get_month() == "กุมภาพันธ์") {
+            return 2;
+        } else if (get_month() == "มีนาคม") {
+            return 3;
+        } else if (get_month() == "เมษายน") {
+            return 4;
+        } else if (get_month() == "พฤษภาคม") {
+            return 5;
+        } else if (get_month() == "มิถุนายน") {
+            return 6;
+        } else if (get_month() == "กรกฎาคม") {
+            return 7;
+        } else if (get_month() == "สิงหาคม") {
+            return 8;
+        } else if (get_month() == "กันยายน") {
+            return 9;
+        } else if (get_month() == "ตุลาคม") {
+            return 10;
+        } else if (get_month() == "พฤศจิกายน") {
+            return 11;
+        } else if (get_month() == "ธันวาคม") {
+            return 12;
+        }else {
+            return 0;
         }
     }
 
