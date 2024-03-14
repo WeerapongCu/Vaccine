@@ -1,13 +1,24 @@
-import java.util.Locale;
-
 public class test {
     public static void main(String[] args) {
-        Locale thai = new Locale("th", "TH");
-        Locale.setDefault(thai);
-        String input = "1 มกราคม 2540";
-        String[] splitStr = input.split("\\s+");
-        for(int i = 0; i < splitStr.length; i++) {
-            System.out.println(splitStr[i]);
+        Person p = new Person("วันจันทร์ที่ 10 สิงหาคม พ.ศ.2540");
+        System.out.println(p.check_match());
+    }
+}
+
+class Check {
+    private String bd = "";
+    private String[] splitStr;
+
+    public Check(String bd) {
+        this.bd = bd;
+        splitStr = bd.split("\\s+");
+    }
+
+    public boolean check_match() {
+        if(splitStr.length == 4){
+            return true;
+        }else{
+            return false;
         }
     }
 }

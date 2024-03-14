@@ -1,3 +1,4 @@
 {
-    "workbench.iconTheme": "vscode-great-icons"
+    "workbench.iconTheme": "vscode-great-icons",
+    "java.debug.settings.onBuildFailureProceed": true
 }
